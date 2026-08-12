@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Leatherlix supplies premium processed raw leather hides including cow, goat, sheep, and buffalo hides for global B2B manufacturers and wholesalers."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Processed Raw Hides | Leatherlix Exporter</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: "#C5A059",
+                            dark: "#111111",
+                            darkgrey: "#1A1A1A",
+                            accent: "#8B5A2B",
+                            lightbg: "#F9F8F6"
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-brand-lightbg text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <nav
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+        aria-label="Main navigation"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-20">
+
+                <!-- Logo -->
+                <a
+                    href="index.html"
+                    class="text-2xl font-extrabold tracking-tight text-brand-dark"
+                    aria-label="Leatherlix Home"
+                >
+                    LEATHER<span class="text-brand-gold">LIX</span>
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+
+                    <a
+                        href="index.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="raw-hides.html"
+                        class="text-brand-gold transition-colors"
+                        aria-current="page"
+                    >
+                        Raw Hides
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Wallets & Belts
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="bg-brand-dark text-white px-5 py-2.5 rounded-md hover:bg-brand-gold hover:text-brand-dark transition-all"
+                    >
+                        Request Quote
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="md:hidden text-2xl text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-gold rounded"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <i
+                        id="menu-icon"
+                        class="fas fa-bars"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MOBILE MENU
+        ========================== -->
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6"
+        >
+
+            <div class="flex flex-col gap-3">
+
+                <a
+                    href="index.html"
+                    class="block font-medium text-gray-700 hover:text-brand-gold transition-colors py-2"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="raw-hides.html"
+                    class="block font-bold text-brand-gold py-2"
+                    aria-current="page"
+                >
+                    Raw Hides
+                </a>
+
+                <a
+                    href="products.html"
+                    class="block font-medium text-gray-700 hover:text-brand-gold transition-colors py-2"
+                >
+                    Wallets & Belts
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="block text-center bg-brand-dark text-white py-3 rounded-md font-bold hover:bg-brand-gold hover:text-brand-dark transition-all"
+                >
+                    Request Quote
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="flex-grow">
+
+        <section class="py-14 sm:py-16 lg:py-20">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Page Header -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+
+                    <span class="inline-block text-brand-gold text-xs font-bold uppercase tracking-widest mb-3">
+                        Premium B2B Leather Supply
+                    </span>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+                        Processed Raw Leather Hides
+                    </h1>
+
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Bulk supply of full-grain and top-grain hides measured per square foot for factories, wholesalers, footwear manufacturers, apparel producers, and craft manufacturers globally.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCT OVERVIEW
+                ========================== -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+                    <!-- Image -->
+                    <div class="rounded-2xl overflow-hidden shadow-xl bg-black border border-gray-200">
+
+                        <img
+                            id="hide-main-img"
+                            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80"
+                            alt="Premium processed leather hides"
+                            class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+                            loading="eager"
+                        >
+
+                    </div>
+
+
+                    <!-- Specifications -->
+                    <div>
+
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">
+                            Supply Specifications
+                        </span>
+
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-2 mb-4">
+                            Hide Supply Specifications
+                        </h2>
+
+                        <p class="text-gray-600 leading-relaxed mb-7">
+                            We export raw and processed hides sourced from cow, goat, sheep, and buffalo. Our leather materials are prepared for high yield, durability, smooth stitching, and professional manufacturing applications.
+                        </p>
+
+
+                        <!-- Specification Card -->
+                        <div class="bg-white p-5 sm:p-6 rounded-xl border border-gray-200 shadow-sm">
+
+                            <div class="divide-y divide-gray-200">
+
+                                <!-- Animal Sources -->
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-3 first:pt-0">
+
+                                    <span class="font-semibold text-gray-700">
+                                        Animal Sources
+                                    </span>
+
+                                    <span class="text-gray-600 sm:text-right">
+                                        Cow, Goat, Sheep, Buffalo
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Pricing -->
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-3">
+
+                                    <span class="font-semibold text-gray-700">
+                                        Pricing Unit
+                                    </span>
+
+                                    <span class="text-gray-600 sm:text-right">
+                                        Per Square Foot (Sq. Ft.)
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Dimensions -->
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-3">
+
+                                    <span class="font-semibold text-gray-700">
+                                        Average Hide Dimensions
+                                    </span>
+
+                                    <span class="text-gray-600 sm:text-right">
+                                        30–35 sq. ft. Cow / 5–8 sq. ft. Goat
+                                    </span>
+
+                                </div>
+
+
+                                <!-- Finishes -->
+                                <div class="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-3 last:pb-0">
+
+                                    <span class="font-semibold text-gray-700">
+                                        Finishes Available
+                                    </span>
+
+                                    <span class="text-gray-600 sm:text-right">
+                                        Full Grain, Top Grain, Suede, Crust
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CTA -->
+                        <div class="mt-7">
+
+                            <a
+                                href="contact.html"
+                                class="inline-flex items-center justify-center w-full sm:w-auto bg-brand-dark text-white px-6 py-3.5 rounded-md font-semibold text-sm hover:bg-brand-gold hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 transition-all"
+                            >
+                                Inquire for Raw Hide Rates
+
+                                <i
+                                    class="fas fa-arrow-right ml-2"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     LEATHER TYPES
+                ========================== -->
+                <div class="mt-16 lg:mt-20">
+
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">
+                            Available Materials
+                        </span>
+
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
+                            Leather Types We Supply
+                        </h2>
+
+                        <p class="text-gray-600 mt-3 leading-relaxed">
+                            Material options can be selected according to your manufacturing requirements and product specifications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                        <!-- Full Grain -->
+                        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+
+                            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                                <i
+                                    class="fas fa-layer-group"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <h3 class="font-bold text-gray-900 mb-2">
+                                Full Grain
+                            </h3>
+
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Premium leather retaining the natural grain for durability and an authentic finish.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Top Grain -->
+                        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+
+                            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                                <i
+                                    class="fas fa-gem"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <h3 class="font-bold text-gray-900 mb-2">
+                                Top Grain
+                            </h3>
+
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Refined leather suitable for consistent finishing and professional manufacturing.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Suede -->
+                        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+
+                            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                                <i
+                                    class="fas fa-feather"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <h3 class="font-bold text-gray-900 mb-2">
+                                Suede
+                            </h3>
+
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Soft-textured leather suitable for selected apparel, footwear, and accessory applications.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Crust -->
+                        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+
+                            <div class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                                <i
+                                    class="fas fa-cubes"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <h3 class="font-bold text-gray-900 mb-2">
+                                Crust Leather
+                            </h3>
+
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Prepared leather suitable for further finishing, coloring, and customized production.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     CTA SECTION
+                ========================== -->
+                <div class="mt-16 bg-brand-dark rounded-2xl p-8 sm:p-10 lg:p-12 text-center">
+
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">
+                        Wholesale & OEM
+                    </span>
+
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+                        Need Bulk Leather Supply?
+                    </h2>
+
+                    <p class="text-gray-400 max-w-2xl mx-auto mt-3 mb-7 leading-relaxed">
+                        Tell us your leather type, quantity, finish, and specifications. Our B2B team can provide further product and quotation details.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="inline-flex items-center justify-center bg-brand-gold text-brand-dark px-7 py-3.5 rounded-md font-bold hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-dark transition-all"
+                    >
+                        Request a Quote
+
+                        <i
+                            class="fas fa-arrow-right ml-2"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-black text-gray-400 py-8 border-t border-gray-900">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-center md:text-left">
+                    &copy; 2026 Leatherlix. All rights reserved. B2B Leather Exporting.
+                </p>
+
+
+                <div class="flex items-center gap-4 text-xs">
+
+                    <a
+                        href="index.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Products
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         MOBILE MENU SCRIPT
+    ========================== -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        if (menuBtn && mobileMenu && menuIcon) {
+
+            menuBtn.addEventListener("click", () => {
+
+                const isOpen = !mobileMenu.classList.contains("hidden");
+
+                mobileMenu.classList.toggle("hidden");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Open navigation menu"
+                        : "Close navigation menu"
+                );
+
+                menuIcon.classList.toggle("fa-bars", isOpen);
+                menuIcon.classList.toggle("fa-xmark", !isOpen);
+
+            });
+
+
+            // Close mobile menu after clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll("a");
+
+            mobileLinks.forEach((link) => {
+
+                link.addEventListener("click", () => {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                });
+
+            });
+
+
+            // Close mobile menu with Escape
+            document.addEventListener("keydown", (event) => {
+
+                if (
+                    event.key === "Escape" &&
+                    !mobileMenu.classList.contains("hidden")
+                ) {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                    menuBtn.focus();
+
+                }
+
+            });
+
+        }
+    </script>
+
+</body>
+</html>
