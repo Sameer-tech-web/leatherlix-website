@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Leatherlix is a premium B2B leather manufacturer and exporter specializing in processed hides, custom leather wallets, belts, and OEM leather goods."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Leatherlix | Premium Leather Hides & Custom Goods Exporter</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: "#C5A059",
+                            dark: "#111111",
+                            darkgrey: "#1A1A1A",
+                            accent: "#8B5A2B",
+                            lightbg: "#F9F8F6"
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-brand-lightbg text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+    <div class="bg-brand-dark text-white text-xs sm:text-sm py-2.5 border-b border-brand-gold/20">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center gap-4">
+
+                <!-- B2B Badge + Message -->
+                <div class="flex items-center gap-2 min-w-0">
+
+                    <span class="shrink-0 bg-brand-gold text-brand-dark px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide">
+                        B2B Supplier
+                    </span>
+
+                    <span class="truncate">
+                        Worldwide OEM & Custom Leather Goods Exporting
+                    </span>
+
+                </div>
+
+                <!-- Desktop Information -->
+                <div class="hidden md:flex items-center gap-6 text-xs shrink-0">
+
+                    <a
+                        href="mailto:info@leatherlix.com"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        <i
+                            class="fas fa-envelope text-brand-gold mr-1"
+                            aria-hidden="true"
+                        ></i>
+                        info@leatherlix.com
+                    </a>
+
+                    <span>
+                        <i
+                            class="fas fa-globe text-brand-gold mr-1"
+                            aria-hidden="true"
+                        ></i>
+                        Global Bulk Export
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <nav
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+        aria-label="Main navigation"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-20">
+
+                <!-- Logo -->
+                <a
+                    href="index.html"
+                    class="text-2xl font-extrabold tracking-tight text-brand-dark"
+                    aria-label="Leatherlix Home"
+                >
+                    LEATHER<span class="text-brand-gold">LIX</span>
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-700">
+
+                    <a
+                        href="index.html"
+                        class="text-brand-gold transition-colors"
+                        aria-current="page"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="raw-hides.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Raw Hides
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Wallets & Belts
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="bg-brand-dark text-white px-5 py-2.5 rounded-md hover:bg-brand-gold hover:text-brand-dark transition-all"
+                    >
+                        Request Quote
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="md:hidden text-2xl text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-gold rounded"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <i
+                        id="menu-icon"
+                        class="fas fa-bars"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MOBILE MENU
+        ========================== -->
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6"
+        >
+
+            <div class="flex flex-col gap-3">
+
+                <a
+                    href="index.html"
+                    class="block font-bold text-brand-gold py-2"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="raw-hides.html"
+                    class="block font-medium text-gray-700 hover:text-brand-gold transition-colors py-2"
+                >
+                    Raw Hides
+                </a>
+
+                <a
+                    href="products.html"
+                    class="block font-medium text-gray-700 hover:text-brand-gold transition-colors py-2"
+                >
+                    Wallets & Belts
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="block text-center bg-brand-dark text-white py-3 rounded-md font-bold hover:bg-brand-gold hover:text-brand-dark transition-all"
+                >
+                    Request Quote
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <main class="flex-grow">
+
+        <section
+            class="relative bg-brand-dark text-white overflow-hidden"
+            aria-labelledby="hero-title"
+        >
+
+            <!-- Background Image -->
+            <div
+                class="absolute inset-0 bg-cover bg-center opacity-30"
+                style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1920&q=80');"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- Dark Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/60"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- Hero Content -->
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="min-h-[620px] lg:min-h-[680px] flex items-center">
+
+                    <div class="max-w-3xl py-20 lg:py-24">
+
+                        <!-- Badge -->
+                        <span class="inline-flex items-center bg-brand-gold/20 text-brand-gold text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-widest mb-5 border border-brand-gold/30">
+                            Premier Leather Manufacturer & Exporter
+                        </span>
+
+
+                        <!-- Heading -->
+                        <h1
+                            id="hero-title"
+                            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6"
+                        >
+                            Custom Leather Finished Goods & Processed Hides
+                        </h1>
+
+
+                        <!-- Description -->
+                        <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                            Leatherlix provides top-tier OEM manufacturing for custom leather wallets, belts, and high-grade processed hides tailored for global brands and wholesalers.
+                        </p>
+
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+
+                            <a
+                                href="contact.html"
+                                class="inline-flex justify-center items-center px-8 py-4 bg-brand-gold text-brand-dark font-bold rounded-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-dark transition-all text-center"
+                            >
+                                Get Instant B2B Quote
+
+                                <i
+                                    class="fas fa-arrow-right ml-2"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+
+                            <a
+                                href="products.html"
+                                class="inline-flex justify-center items-center px-8 py-4 border border-white/30 text-white font-semibold rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white transition-all text-center"
+                            >
+                                View Products & Videos
+
+                                <i
+                                    class="fas fa-play ml-2 text-sm"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TRUST / SERVICES SECTION
+        ========================== -->
+        <section class="bg-white py-12 sm:py-16">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+                    <!-- Feature 1 -->
+                    <div class="text-center sm:text-left">
+
+                        <div class="w-12 h-12 mx-auto sm:mx-0 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                            <i
+                                class="fas fa-leather"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+
+                        <h2 class="text-lg font-bold text-gray-900 mb-2">
+                            Premium Leather
+                        </h2>
+
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Processed leather hides and finished goods prepared for professional manufacturing.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 2 -->
+                    <div class="text-center sm:text-left">
+
+                        <div class="w-12 h-12 mx-auto sm:mx-0 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                            <i
+                                class="fas fa-industry"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+
+                        <h2 class="text-lg font-bold text-gray-900 mb-2">
+                            OEM Manufacturing
+                        </h2>
+
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Custom wallets, belts, and leather accessories manufactured for private-label brands.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feature 3 -->
+                    <div class="text-center sm:text-left">
+
+                        <div class="w-12 h-12 mx-auto sm:mx-0 flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                            <i
+                                class="fas fa-globe"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+
+                        <h2 class="text-lg font-bold text-gray-900 mb-2">
+                            Global B2B Supply
+                        </h2>
+
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Bulk supply solutions for international wholesalers, factories, retailers, and brands.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-black text-gray-400 py-8 border-t border-gray-900">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-center md:text-left">
+                    &copy; 2026 Leatherlix. All rights reserved. B2B Leather Exporting.
+                </p>
+
+
+                <div class="flex items-center gap-4 text-xs">
+
+                    <a
+                        href="raw-hides.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Raw Hides
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Products
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         MOBILE MENU SCRIPT
+    ========================== -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        if (menuBtn && mobileMenu && menuIcon) {
+
+            menuBtn.addEventListener("click", () => {
+
+                const isOpen = !mobileMenu.classList.contains("hidden");
+
+                mobileMenu.classList.toggle("hidden");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Open navigation menu"
+                        : "Close navigation menu"
+                );
+
+                menuIcon.classList.toggle("fa-bars", isOpen);
+                menuIcon.classList.toggle("fa-xmark", !isOpen);
+
+            });
+
+
+            // Close menu when a mobile link is clicked
+            const mobileLinks = mobileMenu.querySelectorAll("a");
+
+            mobileLinks.forEach((link) => {
+
+                link.addEventListener("click", () => {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                });
+
+            });
+
+
+            // Close menu with Escape key
+            document.addEventListener("keydown", (event) => {
+
+                if (
+                    event.key === "Escape" &&
+                    !mobileMenu.classList.contains("hidden")
+                ) {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                    menuBtn.focus();
+
+                }
+
+            });
+
+        }
+    </script>
+
+</body>
+</html>
