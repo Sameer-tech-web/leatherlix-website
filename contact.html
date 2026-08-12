@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -10,7 +11,7 @@
 
     <meta
         name="description"
-        content="Request leather samples, OEM manufacturing details, and B2B quotations from Leatherlix for raw hides, wallets, belts, and custom leather goods."
+        content="Request leather samples, OEM manufacturing details, and B2B quotations from Leatherlix."
     >
 
     <meta
@@ -18,7 +19,10 @@
         content="index, follow"
     >
 
-    <meta name="theme-color" content="#111111">
+    <meta
+        name="theme-color"
+        content="#111111"
+    >
 
     <title>Request Sample & RFQ | Leatherlix</title>
 
@@ -51,11 +55,13 @@
     </script>
 </head>
 
+
 <body class="bg-brand-dark text-white font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- =========================
+
+    <!-- ========================================
          NAVIGATION
-    ========================== -->
+    ========================================= -->
     <nav
         class="sticky top-0 z-50 bg-brand-darkgrey/95 backdrop-blur-md border-b border-gray-800"
         aria-label="Main navigation"
@@ -101,7 +107,7 @@
 
                     <a
                         href="contact.html"
-                        class="text-brand-gold transition-colors"
+                        class="text-brand-gold"
                         aria-current="page"
                     >
                         Request Quote
@@ -119,11 +125,13 @@
                     aria-expanded="false"
                     aria-controls="mobile-menu"
                 >
+
                     <i
                         id="menu-icon"
                         class="fas fa-bars"
                         aria-hidden="true"
                     ></i>
+
                 </button>
 
             </div>
@@ -131,9 +139,7 @@
         </div>
 
 
-        <!-- =========================
-             MOBILE MENU
-        ========================== -->
+        <!-- Mobile Navigation -->
         <div
             id="mobile-menu"
             class="hidden md:hidden bg-brand-darkgrey border-t border-gray-800 px-4 pt-4 pb-6"
@@ -177,16 +183,17 @@
     </nav>
 
 
-    <!-- =========================
+    <!-- ========================================
          MAIN CONTENT
-    ========================== -->
+    ========================================= -->
     <main class="flex-grow">
 
         <section class="py-14 sm:py-16 lg:py-20">
 
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <!-- Page Header -->
+
+                <!-- Page Heading -->
                 <div class="text-center mb-10 sm:mb-12">
 
                     <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">
@@ -198,40 +205,26 @@
                     </h1>
 
                     <p class="text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">
-                        Tell us about your leather requirements, target quantities, and specifications. Our team can provide product and quotation details for your business.
+                        Tell us about your leather requirements, target quantities,
+                        and specifications.
                     </p>
 
                 </div>
 
 
-                <!-- =========================
-                     CONTACT FORM
-                ========================== -->
-
-                <!--
-                    IMPORTANT:
-                    Replace the Formspree action URL below
-                    with your real Formspree endpoint.
-                -->
+                <!-- ========================================
+                     QUOTE FORM
+                ========================================= -->
 
                 <form
-                    action="https://formspree.io/f/xbjnqwe"
-                    method="POST"
+                    id="quote-form"
                     class="bg-brand-darkgrey p-5 sm:p-8 lg:p-10 rounded-2xl border border-gray-800 shadow-2xl space-y-6"
                 >
 
-                    <!-- Hidden subject -->
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New Leatherlix B2B Quote Request"
-                    >
 
-
-                    <!-- =========================
-                         NAME + COMPANY
-                    ========================== -->
+                    <!-- Full Name + Company -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
 
                         <!-- Full Name -->
                         <div>
@@ -241,7 +234,7 @@
                                 class="block text-sm font-medium text-gray-300 mb-2"
                             >
                                 Full Name
-                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                                <span class="text-brand-gold">*</span>
                             </label>
 
                             <input
@@ -258,7 +251,7 @@
                         </div>
 
 
-                        <!-- Company -->
+                        <!-- Company Name -->
                         <div>
 
                             <label
@@ -266,7 +259,7 @@
                                 class="block text-sm font-medium text-gray-300 mb-2"
                             >
                                 Company Name
-                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                                <span class="text-brand-gold">*</span>
                             </label>
 
                             <input
@@ -285,10 +278,9 @@
                     </div>
 
 
-                    <!-- =========================
-                         EMAIL + CATEGORY
-                    ========================== -->
+                    <!-- Email + Category -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
 
                         <!-- Email -->
                         <div>
@@ -298,7 +290,7 @@
                                 class="block text-sm font-medium text-gray-300 mb-2"
                             >
                                 Work Email
-                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                                <span class="text-brand-gold">*</span>
                             </label>
 
                             <input
@@ -316,7 +308,7 @@
                         </div>
 
 
-                        <!-- Category -->
+                        <!-- Requirement Category -->
                         <div>
 
                             <label
@@ -324,7 +316,7 @@
                                 class="block text-sm font-medium text-gray-300 mb-2"
                             >
                                 Requirement Category
-                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                                <span class="text-brand-gold">*</span>
                             </label>
 
                             <select
@@ -361,9 +353,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         QUANTITY
-                    ========================== -->
+                    <!-- Quantity -->
                     <div>
 
                         <label
@@ -385,9 +375,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         DETAILS
-                    ========================== -->
+                    <!-- Order Details -->
                     <div>
 
                         <label
@@ -409,9 +397,7 @@
                     </div>
 
 
-                    <!-- =========================
-                         COUNTRY
-                    ========================== -->
+                    <!-- Country -->
                     <div>
 
                         <label
@@ -434,16 +420,14 @@
                     </div>
 
 
-                    <!-- =========================
-                         SUBMIT BUTTON
-                    ========================== -->
+                    <!-- Submit Button -->
                     <button
                         id="submit-btn"
                         type="submit"
                         class="w-full inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-dark py-4 px-6 rounded-lg font-bold text-base sm:text-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-darkgrey transition-colors shadow-lg"
                     >
 
-                        <span>
+                        <span id="submit-text">
                             Submit RFQ & Request Catalog
                         </span>
 
@@ -455,23 +439,36 @@
                     </button>
 
 
-                    <!-- Privacy Note -->
+                    <!-- Form Status -->
+                    <div
+                        id="form-message"
+                        class="hidden text-center text-sm rounded-lg p-4"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
+
+
                     <p class="text-xs text-gray-500 text-center leading-relaxed">
-                        By submitting this form, you are requesting business information and quotation details from Leatherlix.
+                        Please provide accurate business information so your
+                        requirements can be reviewed properly.
                     </p>
 
                 </form>
 
 
-                <!-- =========================
-                     CONTACT INFORMATION
-                ========================== -->
+                <!-- ========================================
+                     CONTACT CARDS
+                ========================================= -->
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
 
-                    <!-- Email -->
+
+                    <!-- Email Card -->
                     <div class="bg-brand-darkgrey border border-gray-800 rounded-xl p-6 text-center">
 
-                        <div class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                        <div
+                            class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4"
+                        >
 
                             <i
                                 class="fas fa-envelope"
@@ -480,24 +477,23 @@
 
                         </div>
 
-                        <h2 class="font-bold text-white">
+                        <h2 class="font-bold text-white mb-1">
                             Business Email
                         </h2>
 
-                        <a
-                            href="mailto:info@leatherlix.com"
-                            class="text-sm text-gray-400 hover:text-brand-gold transition-colors break-all"
-                        >
-                            info@leatherlix.com
-                        </a>
+                        <p class="text-sm text-gray-400">
+                            Contact details will be available soon.
+                        </p>
 
                     </div>
 
 
-                    <!-- Global Export -->
+                    <!-- Global Supply Card -->
                     <div class="bg-brand-darkgrey border border-gray-800 rounded-xl p-6 text-center">
 
-                        <div class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+                        <div
+                            class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4"
+                        >
 
                             <i
                                 class="fas fa-globe"
@@ -506,7 +502,7 @@
 
                         </div>
 
-                        <h2 class="font-bold text-white">
+                        <h2 class="font-bold text-white mb-1">
                             Global B2B Supply
                         </h2>
 
@@ -525,9 +521,9 @@
     </main>
 
 
-    <!-- =========================
+    <!-- ========================================
          FOOTER
-    ========================== -->
+    ========================================= -->
     <footer class="bg-black text-gray-400 py-8 border-t border-gray-900">
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -535,7 +531,8 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
 
                 <p class="text-xs text-center md:text-left">
-                    &copy; 2026 Leatherlix. All rights reserved. B2B Leather Exporting.
+                    &copy; 2026 Leatherlix. All rights reserved.
+                    B2B Leather Exporting.
                 </p>
 
                 <div class="flex items-center gap-4 text-xs">
@@ -570,42 +567,59 @@
     </footer>
 
 
-    <!-- =========================
-         MOBILE MENU SCRIPT
-    ========================== -->
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
     <script>
+
+        /* ========================================
+           MOBILE MENU
+        ========================================= */
+
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
         const menuIcon = document.getElementById("menu-icon");
+
 
         if (menuBtn && mobileMenu && menuIcon) {
 
             menuBtn.addEventListener("click", () => {
 
-                const isOpen = !mobileMenu.classList.contains("hidden");
+                const isCurrentlyOpen =
+                    !mobileMenu.classList.contains("hidden");
 
                 mobileMenu.classList.toggle("hidden");
 
                 menuBtn.setAttribute(
                     "aria-expanded",
-                    String(!isOpen)
+                    String(!isCurrentlyOpen)
                 );
 
                 menuBtn.setAttribute(
                     "aria-label",
-                    isOpen
+                    isCurrentlyOpen
                         ? "Open navigation menu"
                         : "Close navigation menu"
                 );
 
-                menuIcon.classList.toggle("fa-bars", isOpen);
-                menuIcon.classList.toggle("fa-xmark", !isOpen);
+                menuIcon.classList.toggle(
+                    "fa-bars",
+                    isCurrentlyOpen
+                );
+
+                menuIcon.classList.toggle(
+                    "fa-xmark",
+                    !isCurrentlyOpen
+                );
 
             });
 
 
-            // Close menu after clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll("a");
+            /* Close mobile menu when link is clicked */
+
+            const mobileLinks =
+                mobileMenu.querySelectorAll("a");
+
 
             mobileLinks.forEach((link) => {
 
@@ -624,6 +638,7 @@
                     );
 
                     menuIcon.classList.remove("fa-xmark");
+
                     menuIcon.classList.add("fa-bars");
 
                 });
@@ -631,7 +646,8 @@
             });
 
 
-            // Close menu with Escape key
+            /* Close mobile menu with Escape */
+
             document.addEventListener("keydown", (event) => {
 
                 if (
@@ -652,6 +668,7 @@
                     );
 
                     menuIcon.classList.remove("fa-xmark");
+
                     menuIcon.classList.add("fa-bars");
 
                     menuBtn.focus();
@@ -663,13 +680,51 @@
         }
 
 
-        // Prevent accidental double submission
-        const contactForm = document.querySelector("form");
-        const submitBtn = document.getElementById("submit-btn");
+        /* ========================================
+           FRONTEND FORM HANDLING
+        ========================================= */
 
-        if (contactForm && submitBtn) {
+        const quoteForm =
+            document.getElementById("quote-form");
 
-            contactForm.addEventListener("submit", () => {
+        const submitBtn =
+            document.getElementById("submit-btn");
+
+        const submitText =
+            document.getElementById("submit-text");
+
+        const formMessage =
+            document.getElementById("form-message");
+
+
+        if (
+            quoteForm &&
+            submitBtn &&
+            submitText &&
+            formMessage
+        ) {
+
+            quoteForm.addEventListener("submit", (event) => {
+
+                /*
+                 * Formspree and other external form services
+                 * have intentionally been removed.
+                 *
+                 * This currently handles the form on the
+                 * frontend only.
+                 */
+
+                event.preventDefault();
+
+
+                formMessage.className =
+                    "text-center text-sm rounded-lg p-4 bg-yellow-500/10 border border-yellow-500/30 text-yellow-300";
+
+                formMessage.textContent =
+                    "Your request has been prepared. A real email or backend service must be connected before submissions can be received.";
+
+                formMessage.classList.remove("hidden");
+
 
                 submitBtn.disabled = true;
 
@@ -678,13 +733,30 @@
                     "cursor-not-allowed"
                 );
 
-                submitBtn.querySelector("span").textContent =
-                    "Submitting...";
+                submitText.textContent =
+                    "Request Received";
+
+
+                setTimeout(() => {
+
+                    submitBtn.disabled = false;
+
+                    submitBtn.classList.remove(
+                        "opacity-70",
+                        "cursor-not-allowed"
+                    );
+
+                    submitText.textContent =
+                        "Submit RFQ & Request Catalog";
+
+                }, 3000);
 
             });
 
         }
+
     </script>
 
 </body>
+
 </html>
