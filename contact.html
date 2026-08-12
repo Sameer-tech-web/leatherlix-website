@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Request leather samples, OEM manufacturing details, and B2B quotations from Leatherlix for raw hides, wallets, belts, and custom leather goods."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Request Sample & RFQ | Leatherlix</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: "#C5A059",
+                            dark: "#111111",
+                            darkgrey: "#1A1A1A",
+                            accent: "#8B5A2B",
+                            lightbg: "#F9F8F6"
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-brand-dark text-white font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <nav
+        class="sticky top-0 z-50 bg-brand-darkgrey/95 backdrop-blur-md border-b border-gray-800"
+        aria-label="Main navigation"
+    >
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-20">
+
+                <!-- Logo -->
+                <a
+                    href="index.html"
+                    class="text-2xl font-extrabold tracking-tight text-white"
+                    aria-label="Leatherlix Home"
+                >
+                    LEATHER<span class="text-brand-gold">LIX</span>
+                </a>
+
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-300">
+
+                    <a
+                        href="index.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="raw-hides.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Raw Hides
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-brand-gold transition-colors"
+                    >
+                        Wallets & Belts
+                    </a>
+
+                    <a
+                        href="contact.html"
+                        class="text-brand-gold transition-colors"
+                        aria-current="page"
+                    >
+                        Request Quote
+                    </a>
+
+                </div>
+
+
+                <!-- Mobile Menu Button -->
+                <button
+                    id="menu-btn"
+                    type="button"
+                    class="md:hidden text-2xl text-white focus:outline-none focus:ring-2 focus:ring-brand-gold rounded"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <i
+                        id="menu-icon"
+                        class="fas fa-bars"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MOBILE MENU
+        ========================== -->
+        <div
+            id="mobile-menu"
+            class="hidden md:hidden bg-brand-darkgrey border-t border-gray-800 px-4 pt-4 pb-6"
+        >
+
+            <div class="flex flex-col gap-3">
+
+                <a
+                    href="index.html"
+                    class="block font-medium text-gray-300 hover:text-brand-gold transition-colors py-2"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="raw-hides.html"
+                    class="block font-medium text-gray-300 hover:text-brand-gold transition-colors py-2"
+                >
+                    Raw Hides
+                </a>
+
+                <a
+                    href="products.html"
+                    class="block font-medium text-gray-300 hover:text-brand-gold transition-colors py-2"
+                >
+                    Wallets & Belts
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="block text-center bg-brand-gold text-brand-dark py-3 rounded-md font-bold"
+                    aria-current="page"
+                >
+                    Request Quote
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="flex-grow">
+
+        <section class="py-14 sm:py-16 lg:py-20">
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Page Header -->
+                <div class="text-center mb-10 sm:mb-12">
+
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">
+                        B2B Direct Channel
+                    </span>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-2 leading-tight">
+                        Request Sample Kit or Instant Quote
+                    </h1>
+
+                    <p class="text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">
+                        Tell us about your leather requirements, target quantities, and specifications. Our team can provide product and quotation details for your business.
+                    </p>
+
+                </div>
+
+
+                <!-- =========================
+                     CONTACT FORM
+                ========================== -->
+
+                <!--
+                    IMPORTANT:
+                    Replace the Formspree action URL below
+                    with your real Formspree endpoint.
+                -->
+
+                <form
+                    action="https://formspree.io/f/xbjnqwe"
+                    method="POST"
+                    class="bg-brand-darkgrey p-5 sm:p-8 lg:p-10 rounded-2xl border border-gray-800 shadow-2xl space-y-6"
+                >
+
+                    <!-- Hidden subject -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Leatherlix B2B Quote Request"
+                    >
+
+
+                    <!-- =========================
+                         NAME + COMPANY
+                    ========================== -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <!-- Full Name -->
+                        <div>
+
+                            <label
+                                for="name"
+                                class="block text-sm font-medium text-gray-300 mb-2"
+                            >
+                                Full Name
+                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="name"
+                                type="text"
+                                name="name"
+                                autocomplete="name"
+                                required
+                                maxlength="100"
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                                placeholder="John Doe"
+                            >
+
+                        </div>
+
+
+                        <!-- Company -->
+                        <div>
+
+                            <label
+                                for="company"
+                                class="block text-sm font-medium text-gray-300 mb-2"
+                            >
+                                Company Name
+                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="company"
+                                type="text"
+                                name="company"
+                                autocomplete="organization"
+                                required
+                                maxlength="150"
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                                placeholder="Leather Goods Ltd."
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         EMAIL + CATEGORY
+                    ========================== -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <!-- Email -->
+                        <div>
+
+                            <label
+                                for="email"
+                                class="block text-sm font-medium text-gray-300 mb-2"
+                            >
+                                Work Email
+                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                id="email"
+                                type="email"
+                                name="email"
+                                autocomplete="email"
+                                inputmode="email"
+                                required
+                                maxlength="150"
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                                placeholder="john@company.com"
+                            >
+
+                        </div>
+
+
+                        <!-- Category -->
+                        <div>
+
+                            <label
+                                for="category"
+                                class="block text-sm font-medium text-gray-300 mb-2"
+                            >
+                                Requirement Category
+                                <span class="text-brand-gold" aria-hidden="true">*</span>
+                            </label>
+
+                            <select
+                                id="category"
+                                name="category"
+                                required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                            >
+
+                                <option value="">
+                                    Select Requirement
+                                </option>
+
+                                <option value="raw-hides">
+                                    Raw Leather Hides
+                                </option>
+
+                                <option value="wallets">
+                                    Leather Wallets (OEM)
+                                </option>
+
+                                <option value="belts">
+                                    Leather Belts (OEM)
+                                </option>
+
+                                <option value="custom-leather-goods">
+                                    Custom Leather Goods
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         QUANTITY
+                    ========================== -->
+                    <div>
+
+                        <label
+                            for="quantity"
+                            class="block text-sm font-medium text-gray-300 mb-2"
+                        >
+                            Estimated Order Quantity
+                        </label>
+
+                        <input
+                            id="quantity"
+                            type="text"
+                            name="quantity"
+                            maxlength="100"
+                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                            placeholder="Example: 500 wallets / 1,000 sq. ft. hides"
+                        >
+
+                    </div>
+
+
+                    <!-- =========================
+                         DETAILS
+                    ========================== -->
+                    <div>
+
+                        <label
+                            for="details"
+                            class="block text-sm font-medium text-gray-300 mb-2"
+                        >
+                            Order Details / Requirements
+                        </label>
+
+                        <textarea
+                            id="details"
+                            name="details"
+                            rows="5"
+                            maxlength="2000"
+                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors resize-y"
+                            placeholder="Mention leather type, color, finish, dimensions, logo requirements, target quantity, sample request, or any other specifications..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- =========================
+                         COUNTRY
+                    ========================== -->
+                    <div>
+
+                        <label
+                            for="country"
+                            class="block text-sm font-medium text-gray-300 mb-2"
+                        >
+                            Country / Market
+                        </label>
+
+                        <input
+                            id="country"
+                            type="text"
+                            name="country"
+                            autocomplete="country-name"
+                            maxlength="100"
+                            class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors"
+                            placeholder="United States"
+                        >
+
+                    </div>
+
+
+                    <!-- =========================
+                         SUBMIT BUTTON
+                    ========================== -->
+                    <button
+                        id="submit-btn"
+                        type="submit"
+                        class="w-full inline-flex items-center justify-center gap-2 bg-brand-gold text-brand-dark py-4 px-6 rounded-lg font-bold text-base sm:text-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-darkgrey transition-colors shadow-lg"
+                    >
+
+                        <span>
+                            Submit RFQ & Request Catalog
+                        </span>
+
+                        <i
+                            class="fas fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+
+                    <!-- Privacy Note -->
+                    <p class="text-xs text-gray-500 text-center leading-relaxed">
+                        By submitting this form, you are requesting business information and quotation details from Leatherlix.
+                    </p>
+
+                </form>
+
+
+                <!-- =========================
+                     CONTACT INFORMATION
+                ========================== -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
+
+                    <!-- Email -->
+                    <div class="bg-brand-darkgrey border border-gray-800 rounded-xl p-6 text-center">
+
+                        <div class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+
+                            <i
+                                class="fas fa-envelope"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2 class="font-bold text-white">
+                            Business Email
+                        </h2>
+
+                        <a
+                            href="mailto:info@leatherlix.com"
+                            class="text-sm text-gray-400 hover:text-brand-gold transition-colors break-all"
+                        >
+                            info@leatherlix.com
+                        </a>
+
+                    </div>
+
+
+                    <!-- Global Export -->
+                    <div class="bg-brand-darkgrey border border-gray-800 rounded-xl p-6 text-center">
+
+                        <div class="w-11 h-11 mx-auto flex items-center justify-center rounded-full bg-brand-gold/10 text-brand-gold mb-4">
+
+                            <i
+                                class="fas fa-globe"
+                                aria-hidden="true"
+                            ></i>
+
+                        </div>
+
+                        <h2 class="font-bold text-white">
+                            Global B2B Supply
+                        </h2>
+
+                        <p class="text-sm text-gray-400">
+                            Worldwide OEM & bulk export
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-black text-gray-400 py-8 border-t border-gray-900">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-center md:text-left">
+                    &copy; 2026 Leatherlix. All rights reserved. B2B Leather Exporting.
+                </p>
+
+                <div class="flex items-center gap-4 text-xs">
+
+                    <a
+                        href="index.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="raw-hides.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Raw Hides
+                    </a>
+
+                    <a
+                        href="products.html"
+                        class="hover:text-white hover:underline transition-colors"
+                    >
+                        Products
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         MOBILE MENU SCRIPT
+    ========================== -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        if (menuBtn && mobileMenu && menuIcon) {
+
+            menuBtn.addEventListener("click", () => {
+
+                const isOpen = !mobileMenu.classList.contains("hidden");
+
+                mobileMenu.classList.toggle("hidden");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    String(!isOpen)
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    isOpen
+                        ? "Open navigation menu"
+                        : "Close navigation menu"
+                );
+
+                menuIcon.classList.toggle("fa-bars", isOpen);
+                menuIcon.classList.toggle("fa-xmark", !isOpen);
+
+            });
+
+
+            // Close menu after clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll("a");
+
+            mobileLinks.forEach((link) => {
+
+                link.addEventListener("click", () => {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                });
+
+            });
+
+
+            // Close menu with Escape key
+            document.addEventListener("keydown", (event) => {
+
+                if (
+                    event.key === "Escape" &&
+                    !mobileMenu.classList.contains("hidden")
+                ) {
+
+                    mobileMenu.classList.add("hidden");
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-label",
+                        "Open navigation menu"
+                    );
+
+                    menuIcon.classList.remove("fa-xmark");
+                    menuIcon.classList.add("fa-bars");
+
+                    menuBtn.focus();
+
+                }
+
+            });
+
+        }
+
+
+        // Prevent accidental double submission
+        const contactForm = document.querySelector("form");
+        const submitBtn = document.getElementById("submit-btn");
+
+        if (contactForm && submitBtn) {
+
+            contactForm.addEventListener("submit", () => {
+
+                submitBtn.disabled = true;
+
+                submitBtn.classList.add(
+                    "opacity-70",
+                    "cursor-not-allowed"
+                );
+
+                submitBtn.querySelector("span").textContent =
+                    "Submitting...";
+
+            });
+
+        }
+    </script>
+
+</body>
+</html>
